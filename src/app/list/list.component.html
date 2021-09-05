@@ -1,0 +1,19 @@
+<h1>Space craft Details</h1>
+
+<ul class="userList" *ngIf="users">
+  <li *ngFor="let user of users" class="userItem">
+    <div class="card-header">
+      <img src="{{ user.links.mission_patch_small }}" alt="icon" class="logo" />
+      <div class="content">
+        <p class="mission_name">{{ user.mission_name }}</p>
+        <p class="rocket_name">{{ user.rocket.rocket_name }}</p>
+        <p class="launch_date">{{ user.launch_date_local }}</p>
+      </div>
+    </div>
+    <img
+      src="../../assets/pexels-pixabay-355906.jpg"
+      alt="image"
+      class="userItem-Image"
+    />
+  </li>
+</ul>
